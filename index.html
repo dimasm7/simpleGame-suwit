@@ -1,47 +1,49 @@
 <!DOCTYPE html>
-<head>
-    <title>Suit Jawa</title>
-    <link rel="stylesheet" href="asset/css/style.css">
-</head>
-<body>
-    <h1>Suwit Jawa</h1>
+<html>
+    <head>
+        <title>Suit Jawa</title>
+        <link rel="stylesheet" href="asset/css/style.css">
+    </head>
+    <body>
+        <h1>Suwit Jawa</h1>
 
-    <div class="container">
-        <div class="area-komputer">
-            <div class="name-computer">
-                <span class="title">Computer</span>
+        <div class="container">
+            <div class="area-komputer">
+                <div class="name-computer">
+                    <span class="title">Computer</span>
+                </div>
+                <div class="score-computer">
+                    <span class="title">Score : </span>
+                    <p id="score-computer">0</p>
+                </div>
+                <img src="asset/img/request.png" class="img-computer">
             </div>
-            <div class="score-computer">
-                <span class="title">Score : </span>
-                <p id="score-computer">0</p>
+            <div class="info"></div>
+            <div class="area-player">
+                <div class="name-player">
+                    <span class="title" id="name-player">Name Player</span>
+                </div>
+                <div class="score-player">
+                    <span class="title">Score : </span>
+                    <p id="score-player">0</p>
+                </div>
+                <ul>
+                    <li>
+                        <img src="asset/img/gajah.png" class="gajah">
+                    </li>
+                    <li>
+                        <img src="asset/img/orang.png" class="orang">
+                    </li>
+                    <li>
+                        <img src="asset/img/semut.png" class="semut">
+                    </li>
+                </ul>
             </div>
-            <img src="asset/img/request.png" class="img-computer">
+            <div class="insert-name">
+                <input type="text" id="name" maxlength="10" placeholder="pleace insert your name" required>
+                <button type="submit" onclick="insertName()">Insert</button>
+            </div>
         </div>
-        <div class="info"></div>
-        <div class="area-player">
-            <div class="name-player">
-                <span class="title" id="name-player">Name Player</span>
-            </div>
-            <div class="score-player">
-                <span class="title">Score : </span>
-                <p id="score-player">0</p>
-            </div>
-            <ul>
-                <li>
-                    <img src="asset/img/gajah.png" class="gajah">
-                </li>
-                <li>
-                    <img src="asset/img/orang.png" class="orang">
-                </li>
-                <li>
-                    <img src="asset/img/semut.png" class="semut">
-                </li>
-            </ul>
-        </div>
-        <div class="insert-name">
-            <input type="text" id="name" maxlength="10" placeholder="pleace insert your name" required>
-            <button type="submit" onclick="insertName()">Insert</button>
-        </div>
-    </div>
-    <script src="asset/js/script.js"></script>
-</body>
+        <script src="asset/js/script.js"></script>
+    </body>
+</html>
