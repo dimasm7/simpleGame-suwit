@@ -45,5 +45,16 @@
             </div>
         </div>
         <script src="asset/js/script.js"></script>
+        <script src="asset/js/checkUserAktif.js"></script>
+        <script type="text/javascript">
+            ifvisible.setIdleDuration(3);
+            ifvisible.idle(function(){
+                document.body.style.opacity = 0.1;
+            });
+
+            ifvisible.wakeup(function(){
+                document.body.style.opacity = 1;
+            });
+        </script>
     </body>
 </html>
